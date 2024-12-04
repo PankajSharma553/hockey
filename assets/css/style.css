@@ -144,7 +144,7 @@
   .header_logoLnk {
       background-image: url(../images/logo.png);
       height: 65px;
-      width: 340px;
+      width: 100px;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -218,7 +218,7 @@
   
   .humburger_icon,
   .close_menuIcon {
-    background-image: url("../images/icons8-hamburger-menu-50.png");
+    background-image: url("../images/humburger.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -228,7 +228,7 @@
     cursor: pointer;
   }
   .close_menuIcon {
-    background-image: url("../images/icons8-close-50.png");
+    background-image: url("../images/close.png");
     position: absolute;
     top: 24px;
     right: 15px;

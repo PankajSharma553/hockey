@@ -6,7 +6,7 @@
     width: 30%;
   }
   .header_logoLnk {
-    width: 280px;
+    width: 100px;
   }
   .header_item {
     padding-inline: 15px;
@@ -504,7 +504,7 @@
   @media (max-width: 768px) {
     .header_logoLnk {
       height: 50px;
-      width: 280px;
+      /* width: 280px; */
   }
     .btn {
       font-size: 16px;
@@ -1337,7 +1337,7 @@
   }
   @media(max-width:375px){
     .header_logoLnk {
-      width: 220px;
+      /* width: 220px; */
   }
   .welcome {
     height: 500px;
