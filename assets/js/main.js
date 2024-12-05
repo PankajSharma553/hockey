@@ -9,27 +9,10 @@ close.addEventListener("click", function () {
   navbar.classList.remove("active");
 });
 
-// ======
-
-// Toggle Menu Functionaliy Start
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.querySelector(".custom-toggler").addEventListener("click", function () {
-//     document.body.classList.add("menuToggle");
-//   });
-
-//   document.querySelector(".custom-closer").addEventListener("click", function () {
-//     document.body.classList.remove("menuToggle");
-//   });
-// });
-// Toggle Menu Functionaliy End
-
 
 // AOS JS Start
 AOS.init();
 // AOS JS Start
-
-
-
 
 // Newsletter Validations JS Start
 function validateNews() {
@@ -46,8 +29,6 @@ function validateNews() {
   }
 }
 // Newsletter Validations JS End
-
-
 
 // League Pages Tabs JS Start
 $('.tab').on('click', function (evt) {

@@ -275,8 +275,7 @@ textarea::placeholder {
 }
 
 .banner_btns a {
-  width: 230px;
-  padding: 15px 20px;
+  padding: 12px 48px;
   border: 1px solid transparent;
 }
 
@@ -2134,7 +2133,7 @@ fieldset {
 }
 
 .fusball_leagues tr:nth-child(even) {
-  background-color: #b6f2e7;
+  background-color: #4f7bc763;
 }
 
 .fusball_leagues td.toxic a {
@@ -2175,7 +2174,8 @@ fieldset {
 .back-btn a {
   display: inline-block;
   padding: 5px 26px;
-  background: #12e1b9;
+  /* background: #12e1b9; */
+  background-color: var(--pre-blue);
   border-radius: 4px;
   margin: 0 0 20px;
   line-height: 1;
@@ -2303,8 +2303,8 @@ td.match-position p {
 
 .next-btn {
   display: inline-block;
-  background: #12e1b9;
-  color: #000;
+  background:var(--blue-light);
+  color:var(--white-color);
   text-decoration: none;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -2341,7 +2341,7 @@ td.match-position p {
 }
 
 .team-view-header::after {
-  background: #12e1b9;
+  background:var(--pre-blue);
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2660,7 +2660,7 @@ table tr:nth-child(odd):hover {
 }
 
 .fusball_leagues-inner-content table th {
-  background: #12e1b9 !important;
+  background:var(--pre-blue) !important;
   color: #000 !important;
 }
 
@@ -2778,7 +2778,8 @@ table tr {
 }
 
 .toggle-target {
-  background: #12e1b9;
+  /* background: #12e1b9; */
+  background:var(--pre-blue);
   width: 100%;
   padding: 10px 30px;
   max-width: 1000px;
@@ -3234,7 +3235,7 @@ a.tab.active {
 }
 
 .plyr-headr::after {
-  background: #12e1b9;
+  background-color: var(--pre-blue);
   position: absolute;
   inset: 0;
   width: 100%;
