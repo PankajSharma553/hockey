@@ -18,7 +18,6 @@
     font-size: 36px;
     margin-bottom: 20px;
   }
-
   .header_list {
     flex-direction: column;
     gap: 16px;
@@ -27,16 +26,13 @@
     margin-bottom: 0;
     padding-bottom: 5px;
   }
-
   .header_right {
     flex-direction: column;
     gap: 16px;
   }
-
   .humburger {
     display: flex;
   }
-
   .header_navbar {
     flex-direction: column;
     justify-content: start;
@@ -97,11 +93,19 @@
   .choose_desc {
     font-size: 18px;
   }
-
+  .form-container {
+    padding: 20px;
+  }
 }
 
 /* media query 1024 */
 @media (max-width: 1024px) {
+  .section {
+    margin-block: 3rem;
+  }
+  .form-container {
+    padding: 18px;
+  }
   .singup_heading {
     font-size: 32px;
     margin-bottom: 18px;
@@ -136,6 +140,13 @@
 
 /* media query 991 */
 @media (max-width: 991px) {
+  .howtoPlay {
+    margin-block: 4rem;
+  }
+
+  .howtoPlay_title {
+    font-size: 30px;
+  }
 
   .banner_heading,
   .banner_desc {
@@ -280,10 +291,37 @@
     z-index: 1;
   }
 
+  .howtoPlay_sec {
+    width: 49%;
+  }
+
+  .banner-content h1 {
+    font-size: 38px;
+  }
+
 }
 
 /* media query 768 */
 @media (max-width: 768px) {
+  .section {
+    margin-block: 2rem;
+  }
+  .banner-content h1 {
+    font-size: 32px;
+  }
+
+  .pages-banner {
+    height: 350px;
+  }
+
+  .howtoPlay {
+    margin-block: 3rem;
+  }
+
+  .howtoPlay_title {
+    font-size: 28px;
+  }
+
   .singup_heading {
     font-size: 28px;
   }
@@ -389,11 +427,6 @@
     margin-bottom: 24px;
     margin-top: 12px;
   }
-
-  .footer_icon {
-    width: 280px;
-  }
-
   .footer_content {
     padding-block: 38px;
   }
@@ -430,10 +463,39 @@
 
     flex-wrap: wrap;
   }
+
+  .howtoPlay_sec {
+    width: 100%;
+  }
+
+  .howtoPlay_img {
+    height: 250px;
+  }
 }
 
 /* media query 575 */
 @media (max-width: 575px) {
+  .pages-banner {
+    height: 300px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+
+  .howtoPlay {
+    margin-block: 2rem;
+  }
+
+  .howtoPlay_title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .howtoPlay_desc {
+    font-size: 16px;
+  }
+
   .singup_heading {
     font-size: 24px;
     margin-bottom: 16px;
@@ -531,7 +593,9 @@
   .form_bg .container .form_container {
     padding: 30px 14px;
   }
-
+  .form-container {
+    padding: 16px;
+  }
   .navbar {
     padding: 20px 0;
   }
@@ -549,53 +613,56 @@
   .header_right {
     margin: 0 auto;
   }
+  #login-signup {
+    padding: 12px;
+  }
 }
 
 /*==============================>>> */
 
 
 @media screen and (max-width:1200px) {
-  .custom-menu{
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      padding: 50px;
-      background-color: black;
-      transform: translateX(-100%);
-      transition: all 0.3s linear;
-      z-index: 100;
-      color: #fff;
-      flex-direction: column;
-      justify-content: center;
-      overflow: hidden;
+  .custom-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: 100;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .menuToggle .custom-menu {
-      transform: translateX(0);
-      justify-content: flex-start;
+    transform: translateX(0);
+    justify-content: flex-start;
   }
 
   .custom-menu ul {
-      flex-direction: column;
+    flex-direction: column;
 
   }
 
   .custom-toggler {
-      display: block;
+    display: block;
   }
 
   .custom-closer {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: block;
-      text-align: end;
-      z-index: 55;
-      font-size: 21px;
-      height: 20px;
-      width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    text-align: end;
+    z-index: 55;
+    font-size: 21px;
+    height: 20px;
+    width: 20px;
   }
 
 }

@@ -40,6 +40,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -123,6 +124,65 @@ textarea::placeholder {
   /* color: rgba(140, 82, 255, 60%); */
 }
 
+.section {
+  margin-block: 4rem;
+}
+
+.sec_content {
+  max-width: 1024px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px;
+}
+
+.sec_heading {
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--white-color);
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.sec_title {
+  font-size: 24px;
+  font-weight: 500;
+  color:var(--drak-green);
+  margin-block: 10px;
+}
+
+.sec_desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+
+.sec_list {
+  margin-bottom: 16px;
+}
+
+.sec_item {
+  list-style: disc;
+  margin-left: 16px;
+  color: var(--white-color);
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+
+.sec_item strong {
+  color: var(--drak-green);
+
+}
+
+.sec_item::marker {
+  color: var(--drak-green);
+}
+
+/* haeder section */
 .header {
   position: sticky;
   right: 0;
@@ -378,12 +438,6 @@ textarea::placeholder {
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 20px;
-}
-
-.disclaimer h3 {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 12px;
 }
 
 .footer a {
@@ -646,7 +700,7 @@ textarea::placeholder {
 /* choose section */
 
 .choose {
-  background-image: url("../images/choose.webp");
+  background-image: url("../images/Olympics.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -801,10 +855,6 @@ textarea::placeholder {
 
 /* about section */
 
-.section {
-  margin-block: 2rem;
-}
-
 .sec_content {
   max-width: 1024px;
   width: 100%;
@@ -823,12 +873,7 @@ textarea::placeholder {
   margin-bottom: 40px;
 }
 
-.sec_title {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--pink-color);
-  margin-bottom: 10px;
-}
+
 
 .sec_desc {
   font-size: 16px;
@@ -854,9 +899,6 @@ textarea::placeholder {
   color: var(--pink-color);
 }
 
-.sec_item::marker {
-  color: var(--pink-color);
-}
 
 /* contact us section */
 .contact_wrapper {
@@ -884,7 +926,7 @@ textarea::placeholder {
 }
 
 .contact_rightImg {
-  background-image: url("../images/contact.jpg");
+  background-image: url("../images/contact-us.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -900,93 +942,13 @@ textarea::placeholder {
 .sec_email:hover {
   text-decoration: underline;
 }
-
-
-
+ .submit_btn{
+  margin-top: 16px;
+}
 
 /* =======================>>> */
-
-@font-face {
-  font-family: NeueMachina-bold;
-  src: url(../fonts/NeueMachina-bold.otf);
-}
-
-@font-face {
-  font-family: NeueMachina;
-  src: url(../fonts/NeueMachina-Regular.otf);
-}
-
-/* Global CSS Start */
-/* 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: NeueMachina;
-  padding: 0;
-  margin: 0;
-  word-break: break-word;
-  background-color: #070d29;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: NeueMachina;
-  margin: 0;
-  line-height: 1;
-  color: #fff;
-}
-
-
-
-p {
-  line-height: 1.3;
-  padding: 0;
-  margin: 0;
-  font-family: NeueMachina;
-  color: #fff;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  line-height: 1.2;
-  margin-bottom: 3px;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  font-family: NeueMachina;
-} */
-
-button,
-input[type=text],
-input[type=submit],
-input[type=password],
-textarea,
-input[type=email] {
-  font-family: NeueMachina;
-}
-
-input {
-  font-family: NeueMachina;
+.footer_list {
+  padding-left: 0;
 }
 
 img {
@@ -994,14 +956,6 @@ img {
   object-fit: cover;
   width: 100%;
 }
-
-.container {
-  width: 100%;
-  max-width: 1370px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 
 .py-7 {
   padding: 70px 0;
@@ -1409,11 +1363,11 @@ img {
   text-align: center;
 }
 
-.leagues_content h3 {
+/* .leagues_content h3 {
   font-size: 30px;
   margin-bottom: 20px;
   color: #070d29;
-}
+} */
 
 .leagues_content p {
   margin-bottom: 10px;
@@ -1694,7 +1648,7 @@ img {
 }
 
 .disclaimer h3 {
-  color: #12e1b9;
+  color: var(--pre-blue);
   margin-bottom: 30px;
   font-size: 25px;
 }
@@ -1703,7 +1657,6 @@ img {
   font-size: 15px;
   line-height: 1.6;
 }
-
 
 .footer-copyright-ssl-wrap {
   display: flex;
@@ -1738,9 +1691,9 @@ img {
 /* Pages CSS Start */
 
 .pages-banner {
-  height: 600px;
+  height: 450px;
   position: relative;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1881,35 +1834,21 @@ img {
 /* Game Instructions Page CSS End */
 
 /* Login Signup Form Pages CSS Start */
-
+.login_signup_form{
+  margin-block:80px ;
+}
 .form-container {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-}
-
-#login-signup input[type="text"],
-#login-signup input[type="email"],
-#login-signup input[type="tel"],
-#login-signup input[type="url"],
-#login-signup textarea,
-#login-signup button[type="submit"] {
-  font-family: NeueMachina-bold;
-  text-transform: uppercase;
-  color: #d7d6d6;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  padding: 24px;
 }
 
 #login-signup {
-  /* background-image: url("../images/login-signup-form-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* background-color: rgba(0 0 0 / 30%); */
-  /* background-blend-mode: multiply; */
-  /* border: 5px solid #12e1b9; */
-  padding: 20px;
-  margin: 150px 0;
+  padding: 16px;
   border-radius: 0 20px;
 }
 
@@ -1983,16 +1922,18 @@ fieldset {
 }
 
 #login-signup button[type="submit"]:hover {
- border-color: transparent;
- background-color: white;
- color: var(--pre-blue);
- border-color: var(--pre-blue);
+  border-color: transparent;
+  background-color: white;
+  color: var(--pre-blue);
+  border-color: var(--pre-blue);
 
 }
-.jump-text{
+
+.jump-text {
   color: var(--white-color);
 }
-.jump-text a{
+
+.jump-text a {
   color: var(--dark-blue);
 }
 
@@ -2123,8 +2064,6 @@ fieldset {
 
 .matches-page td.player-name p {
   color: #000;
-  font-family: NeueMachina;
-
 }
 
 .matches-page .fusball_leagues thead tr th:last-child {
@@ -2144,7 +2083,6 @@ fieldset {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: NeueMachina;
 }
 
 .fusball_leagues .text-success {
@@ -2307,8 +2245,8 @@ td.match-position p {
 
 .next-btn {
   display: inline-block;
-  background:var(--blue-light);
-  color:var(--white-color);
+  background: var(--blue-light);
+  color: var(--white-color);
   text-decoration: none;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -2345,7 +2283,7 @@ td.match-position p {
 }
 
 .team-view-header::after {
-  background:var(--pre-blue);
+  background: var(--pre-blue);
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2354,7 +2292,6 @@ td.match-position p {
   z-index: -1;
   border-radius: 14px;
 }
-
 
 .team-view-header ul li {
   display: flex;
@@ -2377,7 +2314,8 @@ td.match-position p {
 }
 
 .c-logo {
-  background: #12e1b9;
+  /* background: #12e1b9; */
+  background: var(--pre-blue);
   width: 30px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -2635,7 +2573,6 @@ td.match-status p {
 .leagues-table td h6 {
   font-weight: 600;
   color: #000000;
-  font-family: NeueMachina;
 }
 
 .leagues-table td {
@@ -2646,7 +2583,6 @@ td.match-status p {
   font-weight: 600;
   color: #000;
   letter-spacing: 1px;
-  font-family: NeueMachina;
 }
 
 table tr:nth-child(odd):hover {
@@ -2664,7 +2600,7 @@ table tr:nth-child(odd):hover {
 }
 
 .fusball_leagues-inner-content table th {
-  background:var(--pre-blue) !important;
+  background: var(--pre-blue) !important;
   color: #000 !important;
 }
 
@@ -2783,7 +2719,7 @@ table tr {
 
 .toggle-target {
   /* background: #12e1b9; */
-  background:var(--pre-blue);
+  background: var(--pre-blue);
   width: 100%;
   padding: 10px 30px;
   max-width: 1000px;
@@ -2823,8 +2759,6 @@ table tr {
   text-align: center;
 }
 
-
-
 .toggle-target a {
   color: #000;
   font-size: 18px;
@@ -2849,11 +2783,11 @@ table tr {
 }
 
 .credits_points button.plus {
-  border-color: #00c900;
+  border-color: var(--drak-green);
 }
 
 .credits_points button.plus i {
-  color: #00c900;
+  color: var(--drak-green);
   font-size: 20px;
   font-weight: bold;
 }
@@ -3040,7 +2974,8 @@ section.my-profile {
 
 .profile-side {
   width: 33%;
-  border: 5px solid #12e1b9;
+  /* border: 5px solid #12e1b9; */
+  border: 5px solid var(--pre-blue);
   height: 450px;
   box-shadow: 0 3px 6px rgb(0 0 0 / 0%), 0 3px 6px rgb(0 0 0 / 16%);
   padding: 20px 10px;
@@ -3069,7 +3004,8 @@ section.my-profile {
   margin: 0 auto;
   height: 80px;
   border-radius: 50%;
-  border: 3px solid #12e1b9;
+  /* border: 3px solid #12e1b9; */
+  border: 3px solid var(--pre-blue);
   background-image: url("../images/dummy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -3082,7 +3018,8 @@ section.my-profile {
 .edit_pan {
   position: absolute;
   top: 70%;
-  background: #12e1b9;
+  /* background: #12e1b9; */
+  background-color: var(--pre-blue);
   width: 28px;
   height: 28px;
   display: flex;
@@ -3110,7 +3047,8 @@ section.my-profile {
 .content-bar a {
   display: inline-block;
   color: #000;
-  background-color: #12e1b9;
+  /* background-color: #12e1b9; */
+  background-color: var(--pre-blue);
   padding: 10px;
   border-radius: 10px;
   transition: 0.3s all ease-in-out;
@@ -3118,7 +3056,7 @@ section.my-profile {
 
 .content-bar a:hover {
   background-color: #fff;
-  box-shadow: #6bfff7 0px 3px 8px;
+  box-shadow: var(--pre-blue) 0px 3px 8px;
 }
 
 .content-bar span {
@@ -3188,13 +3126,13 @@ span.edit_pan i {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 20px;
-  background-color: #12e1b9;
+  /* background-color: #12e1b9; */
   border: none;
   outline: none;
   font-size: 1rem;
   border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  color: #000;
+  /* color: #000; */
   cursor: pointer;
   transition: 0.4s all ease-in-out;
 }
@@ -3202,7 +3140,7 @@ span.edit_pan i {
 .user-content-box button:hover {
   background-color: #fff;
   color: #000;
-  box-shadow: #6bfff7 0px 3px 8px;
+  box-shadow: var(--pre-blue) 0px 3px 8px;
 }
 
 .reset-password {
@@ -3330,27 +3268,23 @@ td.match-score h4 {
   margin-bottom: 10px;
   color: #000;
   font-weight: 600;
-  font-family: NeueMachina;
 }
 
 .plyr-headr .match-details p {
   font-size: 17px;
   margin-bottom: 10px;
   color: #000;
-  font-family: NeueMachina;
 }
 
 .plyr-headr .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
   color: #000;
-  font-family: NeueMachina;
 }
 
 .fusball_leagues tbody tr td p {
   color: #000;
   font-weight: 600;
-  font-family: NeueMachina;
 }
 
 .paginate_button {
@@ -3361,13 +3295,11 @@ td.match-score h4 {
 td.player-name p {
   color: #000;
   font-weight: 600;
-  font-family: NeueMachina;
 }
 
 .fusball_leagues tbody tr td p {
   color: #000;
   font-size: 17px;
-  font-family: NeueMachina;
 }
 
 .palyer-header::after {
@@ -3386,14 +3318,12 @@ td.player-name p {
   font-size: 16px;
   color: #000;
   font-weight: 600;
-  font-family: NeueMachina;
 }
 
 .palyer-header .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
   color: #000;
-  font-family: NeueMachina;
 }
 
 .match-details .flex {
@@ -3402,7 +3332,6 @@ td.player-name p {
 
 .my-team-page .team-view-table td p {
   position: relative;
-  font-family: NeueMachina;
 }
 
 .my-team-page .player-toggle {
@@ -3417,7 +3346,7 @@ td.player-name p {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 10px;
-  border-color: #12e1b9 !important;
+  border-color: var(--pre-blue) !important;
 }
 
 .font-medium {
@@ -3494,7 +3423,7 @@ td.player-name p {
 
 /* Header Pages CSS Start */
 .pages-banner {
-  height: 550px;
+  height: 450px;
   background-color: rgba(0 0 0/20%);
   background-blend-mode: multiply;
 }
@@ -3555,7 +3484,7 @@ td.player-name p {
 }
 
 .about-us {
-  background-image: url("../images/about-banne-image.jpg");
+  background-image: url("../images/about_imges.jpg");
   background-position: center;
 }
 
@@ -3829,9 +3758,82 @@ fieldset {
   background-color: rgba(0 0 0/20%);
 }
 
-.terms-conditions {
-  background-image: url(../images/terms-banner-image.jpg);
-  background-color: rgba(0 0 0/20%);
-}
+
 
 /* Footer Pages CSS End*/
+
+.howtoPlay {
+  margin-block: 5rem;
+}
+
+.howtoPlay_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.howtoPlay-bg {
+  background-image: url(../images/play-hockey.webp);
+  background-color: rgba(0 0 0/20%);
+}
+.howtoPlay_sec {
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: var(--white-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.howtoPlay_img {
+  width: 100%;
+  height: 300px;
+}
+
+.howtoPlay_imgIocn {
+  background-image: url("../images/about-card3-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+  height: 100%;
+  width: 100%;
+}
+.howtoPlay_imgIocn--two {
+  background-image: url("../images/play1.jpg");
+}
+.howtoPlay_imgIocn--three {
+  background-image: url("../images/play2.webp");
+}
+.howtoPlay_imgIocn--four {
+  background-image: url("../images/play4.webp");
+}
+.howtoPlay_imgIocn--five {
+  background-image: url("../images/play5.webp");
+}
+.howtoPlay_imgIocn--six {
+  background-image: url("../images/play6.jpeg");
+}
+
+.howtoPlay_content {
+  padding: 16px;
+}
+
+.howtoPlay_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--pre-blue);
+  margin-bottom: 8px;
+}
+
+.howtoPlay_desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+.howtoPlay_btn {
+  margin: auto 16px 16px 16px;
+  align-self: self-start;
+}
